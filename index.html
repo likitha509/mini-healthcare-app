@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Healthcare Support App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Healthcare Support</h1>
+
+    <div class="container">
+
+        <!-- FORM -->
+        <form id="supportForm">
+            <input type="text" placeholder="Your Name" required><br>
+            <input type="email" placeholder="Your Email" required><br>
+            <input type="text" placeholder="Phone Number" required><br>
+            
+            <select>
+                <option>Patient</option>
+                <option>Volunteer</option>
+            </select><br>
+
+            <textarea placeholder="Describe your issue"></textarea><br>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <p id="responseMsg"></p>
+
+        <!-- CHATBOT -->
+        <div class="chatbox">
+            <h3>Chatbot (FAQ)</h3>
+            <input type="text" id="userInput" placeholder="Ask something...">
+            <button onclick="chatbot()">Send</button>
+            <p id="botReply"></p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
